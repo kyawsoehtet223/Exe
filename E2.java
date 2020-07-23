@@ -1,15 +1,19 @@
 package exe;
 
+import java.util.Scanner;
+
 public class E2 {
 
 	public static void main(String[] args) {
-		String a= "Loser";
-		char v=a.charAt(0);
-		String v1=String.valueOf(v);
-		String a1= a.replace("L","r");
-		String a2=a1.substring(0,a1.length()-1);
+		Scanner s=new Scanner (System.in);
+		String str,result;
+		System.out.println("Pls enter a string");
 		
-		System.out.println(a2.concat(v1));
+		str=s.nextLine();
+	
+		result=str.charAt(str.length()-1)+str.substring(1,str.length()-1)+str.charAt(0);
+		
+		System.out.println(result);
 		
 		
 		
